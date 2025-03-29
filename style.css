@@ -29,6 +29,7 @@ article {
           position: absolute;
           left: 0;
           right: 0;
+          bottom: 5em;
           & h3 {
                font-size: 2em;
                margin: -1em;
@@ -38,6 +39,7 @@ article {
           position: absolute;
           left: 3em;
           right: 3em;
+          bottom: 5em;
           font-size: 0.7em;
      }
 }
@@ -52,12 +54,21 @@ article {
 
 #moon {
      position: absolute;
+     top: 28em;
+     left: 10em;
      right: 1em;
      width: 4em;
      opacity: 77%;
 }
-#cloud1,
+#cloud1 {
+     top: 30em;
+     left: 10em;
+     position: absolute;
+     width: 14em;
+}
 #cloud2 {
+     top: 30em;
+     right: 10em;
      position: absolute;
      width: 14em;
 }
