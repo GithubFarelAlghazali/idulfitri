@@ -34,13 +34,13 @@
           <script>
                const moon = document.getElementById("moon"),
                     maintext = document.querySelector(".main-text"),
-                    paragraph = document.querySelector("p"),
+                    paragraph = document.querySelector("article p"),
                     cloud1 = document.getElementById("cloud1"),
                     cloud2 = document.getElementById("cloud2");
                window.addEventListener("scroll", () => {
                     const val = window.scrollY;
                     maintext.style.bottom = 10 + val / 20 + "em";
-                    paragraph.style.bottom = 15 + val / 7 + "em";
+                    paragraph.style.bottom = 8 + val / 25 + "em";
 
                     moon.style.left = 10 + val / 55 + "em";
                     moon.style.top = 28 + val / 75 + "em";
