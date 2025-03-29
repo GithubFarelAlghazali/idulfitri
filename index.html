@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="in">
      <head>
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>Selamat Idulfitri 1446 Hijriah</title>
+          <title>Selamat Hari Raya Idulfitri 1446 Hijriah ^^</title>
           <link rel="stylesheet" href="style.css" />
      </head>
      <body>
+          <div class="modal" id="audioModal">
+               <div class="modal-content">
+                    <p>Dengarkan suara takbir?</p>
+                    <button class="play-btn" onclick="playAudio()">Ya</button>
+                    <button class="cancel-btn" onclick="closeModal()">Tidak</button>
+               </div>
+          </div>
+          <audio src="youtube_NEhqgvePzg8_audio.mp3" id="takbir"></audio>
+
+          <audio id="myAudio" src="audio.mp3"></audio>
+          <p id="intro">Scroll perlahan...</p>
           <main>
                <article>
                     <div class="main-text">
@@ -40,6 +51,16 @@
                     cloud2.style.right = 10 + val / 18 + "em";
                     cloud2.style.top = 30 + val / 60 + "em";
                });
+
+               function playAudio() {
+                    document.getElementById("takbir").play();
+                    closeModal();
+               }
+
+               function closeModal() {
+                    document.getElementById("audioModal").style.display = "none";
+                    document.getElementById("intro").style.display = "block";
+               }
           </script>
      </body>
 </html>
