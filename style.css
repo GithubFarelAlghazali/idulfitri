@@ -1,0 +1,72 @@
+@font-face {
+     font-family: "huraira";
+     src: url(Huraira-9Y4z5.ttf);
+}
+@font-face {
+     font-family: "poppins-reg";
+     src: url(Poppins-Regular.ttf);
+}
+
+body {
+     width: 100%;
+     overflow-x: hidden;
+     padding: 0;
+     margin: 0;
+     position: relative;
+     height: 150vh;
+     background: rgb(36, 55, 136);
+     background: linear-gradient(180deg, rgba(36, 55, 136, 1) 20%, rgba(79, 140, 216, 1) 40%, rgba(235, 136, 0, 1));
+}
+
+article {
+     font-family: "poppins-reg";
+     width: 80vw;
+     margin: auto;
+     padding-top: 6em;
+     text-align: center;
+     color: white;
+     & .main-text {
+          position: absolute;
+          left: 0;
+          right: 0;
+          & h3 {
+               font-size: 2em;
+               margin: -1em;
+          }
+     }
+     & p {
+          position: absolute;
+          left: 3em;
+          right: 3em;
+          font-size: 0.7em;
+     }
+}
+
+#hero {
+     z-index: 10;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+}
+
+#moon {
+     position: absolute;
+     right: 1em;
+     width: 4em;
+     opacity: 77%;
+}
+#cloud1,
+#cloud2 {
+     position: absolute;
+     width: 14em;
+}
+
+@keyframes moon-out {
+     0% {
+          right: 7em;
+     }
+     100% {
+          right: 1em;
+     }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Selamat Idulfitri 1446 Hijriah</title>
+          <link rel="stylesheet" href="style.css" />
+     </head>
+     <body>
+          <main>
+               <article>
+                    <div class="main-text">
+                         <h1>Selamat Hari Raya</h1>
+                         <h3>Idulfitri 1446 H</h3>
+                    </div>
+                    <p>Mohon maaf untuk semua kesalahan yang saya perbuat, semoga amal kita selama Ramadhan diterima & dapat menjadi titik awal perubahan menjadi lebih baik.</p>
+               </article>
+               <img src="img/1743141344308.png" alt="" id="hero" />
+          </main>
+          <img src="img/20250329_123830.png" alt="" id="moon" />
+          <img src="img/1743231904291.png" alt="" id="cloud1" />
+          <img src="img/1743231944636.png" alt="" id="cloud2" />
+          <script>
+               const moon = document.getElementById("moon"),
+                    maintext = document.querySelector(".main-text"),
+                    paragraph = document.querySelector("p"),
+                    cloud1 = document.getElementById("cloud1"),
+                    cloud2 = document.getElementById("cloud2");
+               window.addEventListener("scroll", () => {
+                    const val = window.scrollY;
+                    maintext.style.bottom = 24 + val / 25 + "em";
+                    paragraph.style.bottom = 10 + val / 20 + "em";
+
+                    moon.style.left = 10 + val / 24 + "em";
+                    moon.style.top = 28 + val / 75 + "em";
+
+                    cloud1.style.left = 10 + val / 18 + "em";
+                    cloud1.style.top = 30 + val / 60 + "em";
+
+                    cloud2.style.right = 10 + val / 18 + "em";
+                    cloud2.style.top = 30 + val / 60 + "em";
+               });
+          </script>
+     </body>
+</html>
