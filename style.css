@@ -7,14 +7,20 @@
      src: url(Poppins-Regular.ttf);
 }
 
+html,
+body {
+     max-width: 100%;
+     overflow-x: hidden;
+}
+
 body {
      font-family: "poppins-reg";
-     width: 100vw;
      display: flex;
      justify-content: center;
      align-items: center;
      scroll-behavior: smooth;
      overflow-x: hidden;
+     width: 100vw;
      padding: 0;
      margin: 0;
      position: relative;
