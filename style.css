@@ -9,7 +9,11 @@
 
 body {
      font-family: "poppins-reg";
-     width: 100%;
+     width: 100vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     scroll-behavior: smooth;
      overflow-x: hidden;
      padding: 0;
      margin: 0;
@@ -67,6 +71,11 @@ body {
      animation: pulse 10s linear forwards;
 }
 
+main {
+     width: 100vw;
+     overflow-x: hidden;
+}
+
 article {
      width: 80vw;
      margin: auto;
@@ -77,9 +86,9 @@ article {
           position: absolute;
           left: 0;
           right: 0;
-          bottom: 5em;
+          bottom: 10em;
           & h3 {
-               font-size: 2.3em;
+               font-size: 2.5em;
                margin: -0.8em;
                color: white;
                /* color: rgb(236, 221, 4);
@@ -91,7 +100,7 @@ article {
           position: absolute;
           left: 3em;
           right: 3em;
-          bottom: 5em;
+          bottom: 17em;
           font-size: 0.7em;
      }
 }
